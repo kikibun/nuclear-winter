@@ -1,0 +1,12 @@
+from random import randint, shuffle
+noun = ["cop", "bartender", "gardener", "octopus", "robot", "ladies' maid", "surgeon", "hair stylist", "neo nazi", "engineer", "climate change denier", "tinkerer", "literal giant", "executive chef", "nurse", "mee maw", "neckbeard", "doomsday prepper", "dank memer", "Neil Degrasse Tyson"]
+adj = ["stinks", "never wears pants", "won't look you in the eye", "wants to destroy all humans", "snores like a freight train", "is scared of fish", "is a hugger", "used to be a preschool teacher", "only eats with their hands", "responds to statements like they're on jeopardy", "is a survivalist", "can repair anything", "teaches anger management classes", "starts fires with their mind", "can make clothing out of anything", "has macguyver skills", "only speaks French", "is mute", "is an arrogant atheist", "is a righteous Christian"]
+
+shuffle(noun)shuffle(adj)
+
+if len(noun) >= 20 and len(adj) >= 20:
+  for i in range(0,20):
+    print i+1,"A %s who %s" %(noun[i], adj[i])
+else:
+    print "Your lists don't have enough items!"
+    print "Noun list has %s items, adj list has %s items." %(len(noun), len(adj))
